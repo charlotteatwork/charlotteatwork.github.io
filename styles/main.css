@@ -1,0 +1,31 @@
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .container {
+    color: #336600;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+}
+
+.col-md-3 h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.col-md-3>a:last-child {
+    color: #ff3300;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.col-md-3 p {
+    font-size: 16px;
+}

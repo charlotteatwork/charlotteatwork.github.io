@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <title>Charlotte's Demo</title>
@@ -15,60 +16,132 @@
 
 <body>
     <div class="container">
-        <h1>Charlotte's Demo</h1></div>
-    <ul class="nav nav-tabs">
-        <li class="active dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            課堂練習 <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#css-tab" data-toggle="tab">CSS 練習</a></li>
-                <li class="divider" role="swparator"></li>
-                <li><a data-toggle="tab" href="#bootstrap-tab-1">Bootstrap 練習一</a></li>
-                <li><a data-toggle="tab" href="#bootstrap-tab-2">Bootstrap 練習 NAV-TABS</a></li>
-                <li><a data-toggle="tab" href="#bootstrap-tab-3">Bootstrap 練習三</a></li>
-                <li><a data-toggle="tab" href="#bootstrap-tab-4">Bootstrap 練習 圖片輪播</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Homework1</a></li>
-        <li><a href="#">Homework2</a></li>
-        <li><a href="#">Homework3</a></li>
-    </ul>
-    <div class="tab-content">
-        <div id="css-tab" class="tab-pane fade">
-            <div class="container">
-                <h1>CSS 練習</h1>
-                <a href="CSSSample/index.html"> In GitHub Pages </a>
-                <br/>
-                <a href="http://codepen.io/charlottewang/pen/qbPJBX"> @ CodePen</a>
+        <h1>Charlotte's Demo</h1>
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" href="#personal-puzzle">Homework1</a></li>
+            <li><a href="#">Homework2</a></li>
+            <li><a href="#">Homework3</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 課堂練習 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a data-toggle="tab" href="#css-tab">CSS 練習</a></li>
+                    <li class="divider" role="swparator"></li>
+                    <li><a data-toggle="tab" href="#bootstrap-tab-1">Bootstrap 練習一</a></li>
+                    <li><a data-toggle="tab" href="#bootstrap-tab-2">Bootstrap 練習 NAV-TABS</a></li>
+                    <li><a data-toggle="tab" href="#bootstrap-tab-3">Bootstrap 練習三</a></li>
+                    <li><a data-toggle="tab" href="#bootstrap-tab-4">Bootstrap 練習 圖片輪播</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="personal-puzzle" class="tab-pane fade in active">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="jumbotron" style="background-image: url(http://previews.123rf.com/images/lexaarts/lexaarts1311/lexaarts131100032/23463315-frustration-3d-human-and-one-missing-puzzle-piece-Stock-Photo-man.jpg)">
+                            <div class="container">
+                                <h1>夏綠蒂的拼圖誌</h1>
+                                <p>嗯，我沒有在拍食物照，倒是很多拼圖照片，來寫拼圖誌好了</p>
+                                <h3>常去的拼圖店</h3>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/puzzlechamber/">拼圖密室</a></li>
+                                    <p>這是拼圖迷大姊因為太喜愛拼圖了，等孩子大了，自己出來開店</p>
+                                    <li><a href="http://newweb.renoirpuzzle.com.tw/">雷諾瓦</a></li>
+                                    <p>雷諾瓦是開店二十幾年的連鎖拼圖店</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>最近參加了一個跨國際的拼圖活動－－<a href="https://www.facebook.com/groups/World.Puzzle.Days.2016/">World Puzzle Days 2016</a> ，今年有橫跨38國超過七百六十個拼圖迷共同參與這個活動
+                        </p>
+                        <p>我預定要在兩個月中完成總數八千片的拼圖，目前已經完成的有：</p>
+                    </div>
+                    <div class="row carousel-holder">
+                        <div class="col-md-12">
+                            <div id="top-carousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#top-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#top-carousel" data-slide-to="1" class=""></li>
+                                    <li data-target="#top-carousel" data-slide-to="2" class=""></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <div class="jumbotron col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-J-I1uRFC4b8/VosEMXmSWvI/AAAAAAAAH1A/i9Rbbx6SSUw/s720-Ic42/P_20160101_180641.jpg)">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h1>台灣尋蹟</h1>
+                                            <p>台灣在漫長的歷史演進過程中，留下許多膾炙人口的文化資產，其中有古老建築、人文或歷史景點、古蹟、遺跡等等。現在就來一趟台灣文化古蹟巡禮，好好細細品味這充滿歷史見證的風華歲月。</p>
+                                            <a href="https://picasaweb.google.com/CharlotteRelaxed/TSRVWG">拼圖相簿</a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="jumbotron col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-ENsCwWFSi6A/VosETzqZyQI/AAAAAAAAH2Y/bUsmPU3MB_0/s720-Ic42/2016-01-04-832.jpg)">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h1>台灣祭典</h1>
+                                            <p>台灣在漫長的歷史演進過程中，留下許多膾炙人口的文化資產，其中有古老建築、人文或歷史景點、古蹟、遺跡等等。現在就來一趟台灣文化古蹟巡禮，好好細細品味這充滿歷史見證的風華歲月。</p>
+                                            <a href="https://picasaweb.google.com/CharlotteRelaxed/TSRVWG">拼圖相簿</a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="jumbotron col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-zOMx-iRivqU/VpIub4wNLDI/AAAAAAAAH34/i2IiG1hI35Q/s1024-Ic42/2016-01-10-853.jpg)">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h1>The Mariner's Chest</h1>
+                                            <p>我不是很喜歡很花、很瑣碎的圖，但 <a href="http://www.colinthompson.com/page35.htm">Colin Thompson</a> 的作品卻讓我忍不住要買下來收藏。</p>
+                                            <a href="https://picasaweb.google.com/CharlotteRelaxed/TheMarinerSChest">拼圖相簿</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#top-carousel" class="left carousel-control" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            </a>
+                            <a href="#top-carousel" class="right carousel-control" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="bootstrap-tab-1" class="tab-pane fade">
-            <div class="container">
-                <h1>Bootstrap 練習1</h1>
-                <a href="BootstrapSample1/index.html"> In GitHub Pages </a>
-                <br/>
-                <a href="http://codepen.io/charlottewang/pen/vLdmNx"> @ CodePen</a>
+            <div id="css-tab" class="tab-pane fade">
+                <div class="container">
+                    <h1>CSS 練習</h1>
+                    <a href="CSSSample/index.html"> In GitHub Pages </a>
+                    <br/>
+                    <a href="http://codepen.io/charlottewang/pen/qbPJBX"> @ CodePen</a>
+                </div>
             </div>
-        </div>
-        <div id="bootstrap-tab-2" class="tab-pane fade">
-            <div class="container">
-                <h1>Bootstrap 練習 NAV-TABS －－就是本頁</h1>
+            <div id="bootstrap-tab-1" class="tab-pane fade">
+                <div class="container">
+                    <h1>Bootstrap 練習1</h1>
+                    <a href="BootstrapSample1/index.html"> In GitHub Pages </a>
+                    <br/>
+                    <a href="http://codepen.io/charlottewang/pen/vLdmNx"> @ CodePen</a>
+                </div>
             </div>
-        </div>
-        <div id="bootstrap-tab-3" class="tab-pane fade">
-            <div class="container">
-                <h1>Bootstrap 練習3</h1>
-                <a href="BootstrapSample3/index.html"> In GitHub Pages </a>
-                <br/>
-                <a href="http://codepen.io/charlottewang/pen/vLdjBq"> @ CodePen</a>
+            <div id="bootstrap-tab-2" class="tab-pane fade">
+                <div class="container">
+                    <h1>Bootstrap 練習 NAV-TABS －－就是本頁</h1>
+                </div>
             </div>
-        </div>
-        <div id="bootstrap-tab-4" class="tab-pane fade">
-            <div class="container">
-                <h1>Bootstrap 練習4</h1>
-                <a href="BootstrapSample4/index.html"> In GitHub Pages </a>
-                <br/>
-                <a href="http://codepen.io/charlottewang/pen/JGpvJV"> @ CodePen</a>
+            <div id="bootstrap-tab-3" class="tab-pane fade">
+                <div class="container">
+                    <h1>Bootstrap 練習3</h1>
+                    <a href="BootstrapSample3/index.html"> In GitHub Pages </a>
+                    <br/>
+                    <a href="http://codepen.io/charlottewang/pen/vLdjBq"> @ CodePen</a>
+                </div>
+            </div>
+            <div id="bootstrap-tab-4" class="tab-pane fade">
+                <div class="container">
+                    <h1>Bootstrap 練習4</h1>
+                    <a href="BootstrapSample4/index.html"> In GitHub Pages </a>
+                    <br/>
+                    <a href="http://codepen.io/charlottewang/pen/JGpvJV"> @ CodePen</a>
+                </div>
             </div>
         </div>
     </div>
