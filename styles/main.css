@@ -1,3 +1,23 @@
+body {
+    background-image: url("2015-10-24-630_.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+* {
+    font-family: "Comic Sans MS", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+    font-size: 16px;
+}
+
+#headerBar {
+    color: #003300;
+    background-color: #fff3e5;
+}
+
+#puzzleHeader {
+    background-image: url(DSC01547.JPG);
+}
+
 .carousel-holder {
     margin-bottom: 30px;
 }
@@ -9,9 +29,13 @@
 }
 
 .jumbotron .container {
-    color: #336600;
     position: relative;
-    top: 10px;
+    top: 8px;
+}
+
+.container h1,
+.container h3,
+a {
     font-weight: bold;
 }
 
