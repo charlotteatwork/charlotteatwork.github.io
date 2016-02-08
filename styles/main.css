@@ -20,7 +20,7 @@ body {
 }
 
 #personal-puzzle {
-    background-image: url(DSC01547.JPG);
+    background-image: url("DSC01547.JPG");
     background-repeat: no-repeat;
     background-size: cover;
 }
