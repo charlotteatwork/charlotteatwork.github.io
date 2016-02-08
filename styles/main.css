@@ -21,7 +21,6 @@ body {
 
 #personal-puzzle {
     background-image: url(DSC01547.JPG);
-    height: 180px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,6 +63,16 @@ body {
     color: #ff3300;
     font-size: 25px;
     font-weight: bold;
+}
+
+.vertical-container {
+    height: 180px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .div-float-right {
