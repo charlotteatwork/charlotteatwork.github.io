@@ -1,0 +1,223 @@
+body {
+    background-image: url("images/bg.jpg");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+h1 {
+    clear: both;
+    color: #a37654;
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+    text-align: justify;
+    padding: 8px 0 8px 0;
+    line-height: 20px;
+}
+
+.wrap {
+    width: 960px;
+    margin: auto;
+}
+
+.logo {
+    width: 100%;
+    padding: 25px 0 0 25px;
+    float: left;
+}
+
+#menu {
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 60px 0 0 30px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item {
+    display: inline block;
+    padding: 0px 0 15px 0;
+    margin: 0px 22px 0 0;
+    float: left;
+    font-size: 17px;
+}
+
+.welcome_block {
+    width: 550px;
+    height: 256px;
+    padding: 10px 0 0 30px;
+    float: left;
+}
+
+.user_icon,
+.read_more {
+    float: right;
+    border: 0;
+}
+
+.main_content {
+    clear: both;
+    display: block;
+    width: 100%;
+    background: url(images/center_bg.gif) repeat-y center;
+}
+
+.main_content h2 {
+    clear: both;
+    color: #a37654;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.left_content {
+    width: 60%;
+    float: left;
+}
+
+.right_content {
+    width: 35%;
+    float: right;
+    padding: 10px;
+}
+
+.services_block {
+    width: 45%;
+    float: left;
+    padding: 10px;
+}
+
+.icon_left {
+    width: 25%;
+    float: left;
+}
+
+.services_details {
+    width: 70%;
+    float: left;
+    padding: 5px;
+}
+
+.services_details h3 {
+    clear: both;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px dotted #BF8153;
+    line-height: 25px;
+}
+
+.about {
+    padding: 5px;
+}
+
+.thumb {
+    float: left;
+    margin: 8px;
+}
+
+.news_block {
+    border-bottom: 1px dotted #BF8153;
+}
+
+.news_block h4 {
+    clear: both;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.news_block a {
+    color: black;
+    text-decoration: none;
+}
+
+.project {
+    border: 1px solid #BF8153;
+    margin: 3px;
+}
+
+.footer {
+    width: 100%;
+    height: 170px;
+    color: #FFFFFF;
+    background: url(images/footer_bg.gif) repeat;
+}
+
+.footer h2 {
+    clear: both;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_content {
+    width: 960px;
+    margin: auto;
+    color: white;
+}
+
+.left_footer_content {
+    float: left;
+    width: 33%;
+}
+
+.brown {
+    color: #d5a17c;
+}
+
+.footer_links {
+    float: left;
+    width: 25%;
+    margin: 0 0 0 10px;
+}
+
+.footer_links ul {
+    list-style: none;
+    padding: 0px 0 0 10px;
+    margin: 0px;
+}
+
+.footer_links ul li {
+    margin: 0px;
+}
+
+.footer_links ul li a {
+    text-decoration: none;
+    padding: 0 0 0 20px;
+    font-size: 12px;
+    margin: 0px;
+    color: #d5a17c;
+    background: url(images/footer_list_bullet.gif) no-repeat left;
+}
+
+.footer_links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_network {
+    width: 36%;
+    float: right;
+}
+
+.footer_network a {
+    padding: 0 5px 0 0px;
+}
+
+.csstemplatesmarket {
+    clear: both;
+    float: left;
+    margin: 20px 0 0 0;
+}
