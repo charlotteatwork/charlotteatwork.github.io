@@ -31,14 +31,16 @@ body {
     font-weight: bold;
 }
 
-#puxxleContent {
+#puzzleContent,
+#puzzleStores {
     color: #336600;
     background-color: rgba(255, 242, 229, 0.5);
     padding: 20px;
     font-size: 16px;
 }
 
-#puxxleContent h3 {
+#puzzleContent h3,
+.row h3 {
     font-size: 40px;
     font-weight: bold;
 }
