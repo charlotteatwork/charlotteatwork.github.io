@@ -17,89 +17,152 @@
 <body>
     <div id="headerBar" class="container">
         <h1>Charlotte's Demo</h1>
-        <ul class="nav nav-tabs">
-            <li><a data-toggle="tab" href="#personal-puzzle">Homework1</a></li>
-            <li><a href="#">Homework2</a></li>
-            <li><a href="#">Homework3</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 課堂練習 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a data-toggle="tab" href="#css-tab">CSS 練習</a></li>
-                    <li class="divider" role="swparator"></li>
-                    <li><a data-toggle="tab" href="#bootstrap-tab-1">Bootstrap 練習一</a></li>
-                    <li><a data-toggle="tab" href="#bootstrap-tab-2">Bootstrap 練習 NAV-TABS</a></li>
-                    <li><a data-toggle="tab" href="#bootstrap-tab-3">Bootstrap 練習三</a></li>
-                    <li><a data-toggle="tab" href="#bootstrap-tab-4">Bootstrap 練習 圖片輪播</a></li>
-                </ul>
-            </li>
-        </ul>
+        <nav>
+            <ul class="nav nav-tabs">
+                <li><a data-toggle="tab" href="#personal-puzzle">Homework1</a></li>
+                <li><a href="#">Homework2</a></li>
+                <li><a href="#">Homework3</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 課堂練習 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a data-toggle="tab" href="#css-tab">CSS 練習</a></li>
+                        <li class="divider" role="swparator"></li>
+                        <li><a data-toggle="tab" href="#bootstrap-tab-1">Bootstrap 練習一</a></li>
+                        <li><a data-toggle="tab" href="#bootstrap-tab-2">Bootstrap 練習 NAV-TABS</a></li>
+                        <li><a data-toggle="tab" href="#bootstrap-tab-3">Bootstrap 練習三</a></li>
+                        <li><a data-toggle="tab" href="#bootstrap-tab-4">Bootstrap 練習 圖片輪播</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <div class="tab-content">
-            <div id="personal-puzzle" class="tab-pane fade in active">
+            <div class="tab-pane fade in active">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div id="puzzleHeader" class="jumbotron">
-                            <div class="container">
-                                <h1>夏綠蒂的拼圖誌</h1>
-                                <p>嗯，我沒有在拍食物照，倒是很多拼圖照片，來寫拼圖誌好了</p>
-                                <h3>常去的拼圖店</h3>
-                                <ul>
-                                    <li><a href="https://www.facebook.com/puzzlechamber/">拼圖密室</a></li>
-                                    <p>這是拼圖迷大姊因為太喜愛拼圖了，等孩子大了，自己出來開店</p>
-                                    <li><a href="http://newweb.renoirpuzzle.com.tw/">雷諾瓦</a></li>
-                                    <p>雷諾瓦是開店二十幾年的連鎖拼圖店</p>
-                                </ul>
+                    <div id="personal-puzzle" class="row">
+                        <div id="puzzleHeader" class="col-md-10">
+                            <div class="row">
+                                <div>
+                                    <h1>夏綠蒂的拼圖誌</h1>
+                                </div>
+                                <div class="div-float-right">
+                                    <p>嗯，我沒有在拍食物照，倒是很多拼圖照片，來寫拼圖誌好了</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <p>最近參加了一個跨國際的拼圖活動－－<a href="https://www.facebook.com/groups/World.Puzzle.Days.2016/">World Puzzle Days 2016</a> ，今年有橫跨38國超過七百六十個拼圖迷共同參與這個活動
-                        </p>
-                        <p>我預定要在兩個月中完成總數八千片的拼圖，目前已經完成的有：</p>
-                    </div>
-                    <div class="row carousel-holder">
-                        <div class="col-md-12">
-                            <div id="top-carousel" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#top-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#top-carousel" data-slide-to="1" class=""></li>
-                                    <li data-target="#top-carousel" data-slide-to="2" class=""></li>
-                                </ol>
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <div class="jumbotron col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-J-I1uRFC4b8/VosEMXmSWvI/AAAAAAAAH1A/i9Rbbx6SSUw/s720-Ic42/P_20160101_180641.jpg)">
+                    <div id="puxxleContent" class="row">
+                        <div class="row">
+                            <p>最近參加了一個跨國際的拼圖活動－－<a href="https://www.facebook.com/groups/World.Puzzle.Days.2016/">World Puzzle Days 2016</a> ，今年有橫跨38國超過七百六十個拼圖迷共同參與這個活動
+                            </p>
+                            <p>我預定要在兩個月中完成總數八千片的拼圖，目前已經完成的有：</p>
+                        </div>
+                        <div id="carousel-holder" class="row">
+                            <div class="col-md-12">
+                                <div id="top-carousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#top-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#top-carousel" data-slide-to="1" class=""></li>
+                                        <li data-target="#top-carousel" data-slide-to="2" class=""></li>
+                                        <li data-target="#top-carousel" data-slide-to="3" class=""></li>
+                                        <li data-target="#top-carousel" data-slide-to="4" class=""></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-J-I1uRFC4b8/VosEMXmSWvI/AAAAAAAAH1A/i9Rbbx6SSUw/s720-Ic42/P_20160101_180641.jpg)">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h1>台灣尋蹟</h1>
+                                                <p>台灣在漫長的歷史演進過程中，留下許多膾炙人口的文化資產，其中有古老建築、人文或歷史景點、古蹟、遺跡等等。現在就來一趟台灣文化古蹟巡禮，好好細細品味這充滿歷史見證的風華歲月。</p>
+                                                <a href="https://picasaweb.google.com/CharlotteRelaxed/TSRVWG">拼圖相簿</a>
+                                            </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <h1>台灣尋蹟</h1>
-                                            <p>台灣在漫長的歷史演進過程中，留下許多膾炙人口的文化資產，其中有古老建築、人文或歷史景點、古蹟、遺跡等等。現在就來一趟台灣文化古蹟巡禮，好好細細品味這充滿歷史見證的風華歲月。</p>
-                                            <a href="https://picasaweb.google.com/CharlotteRelaxed/TSRVWG">拼圖相簿</a>
+                                        <div class="item">
+                                            <div class="col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-ENsCwWFSi6A/VosETzqZyQI/AAAAAAAAH2Y/bUsmPU3MB_0/s720-Ic42/2016-01-04-832.jpg)">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h1>台灣祭典</h1>
+                                                <p>台灣在漫長的歷史演進過程中，留下許多膾炙人口的文化資產，其中有古老建築、人文或歷史景點、古蹟、遺跡等等。現在就來一趟台灣文化古蹟巡禮，好好細細品味這充滿歷史見證的風華歲月。</p>
+                                                <a href="https://picasaweb.google.com/CharlotteRelaxed/TSRVWG">拼圖相簿</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="jumbotron col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-ENsCwWFSi6A/VosETzqZyQI/AAAAAAAAH2Y/bUsmPU3MB_0/s720-Ic42/2016-01-04-832.jpg)">
+                                        <div class="item">
+                                            <div class="col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-zOMx-iRivqU/VpIub4wNLDI/AAAAAAAAH34/i2IiG1hI35Q/s1024-Ic42/2016-01-10-853.jpg)">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h1>The Mariner's Chest</h1>
+                                                <p>我不是很喜歡很花、很瑣碎的圖，但 <a href="http://www.colinthompson.com/page35.htm">Colin Thompson</a> 的作品卻讓我忍不住要買下來收藏。</p>
+                                                <a href="https://picasaweb.google.com/CharlotteRelaxed/TheMarinerSChest">拼圖相簿</a>
+                                            </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <h1>台灣祭典</h1>
-                                            <p>台灣在漫長的歷史演進過程中，留下許多膾炙人口的文化資產，其中有古老建築、人文或歷史景點、古蹟、遺跡等等。現在就來一趟台灣文化古蹟巡禮，好好細細品味這充滿歷史見證的風華歲月。</p>
-                                            <a href="https://picasaweb.google.com/CharlotteRelaxed/TSRVWG">拼圖相簿</a>
+                                        <div class="item">
+                                            <div class="col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-E-EhS-OJPLo/Vq2_N0XhpyI/AAAAAAAAH68/8HUS5GPyRoY/s1280-Ic42/2016-01-31-884.jpg)">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h1>Castle Of Horror</h1>
+                                                <p>2009 年台北富邦的客戶聯合送的禮物，實在很少拼兩千以上的，翻面翻得我很不耐煩，由於尺寸比較大，沒有板子容納的下，只能放在床上，又增加了拼圖的不方便，一整個拼很久啊。</p>
+                                                <a href="https://picasaweb.google.com/CharlotteRelaxed/CastleOfHorror">拼圖相簿</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="jumbotron col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-zOMx-iRivqU/VpIub4wNLDI/AAAAAAAAH34/i2IiG1hI35Q/s1024-Ic42/2016-01-10-853.jpg)">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <h1>The Mariner's Chest</h1>
-                                            <p>我不是很喜歡很花、很瑣碎的圖，但 <a href="http://www.colinthompson.com/page35.htm">Colin Thompson</a> 的作品卻讓我忍不住要買下來收藏。</p>
-                                            <a href="https://picasaweb.google.com/CharlotteRelaxed/TheMarinerSChest">拼圖相簿</a>
+                                        <div class="item">
+                                            <div class="col-md-9" style="background-image: url(https://lh3.googleusercontent.com/-dIq2kCwVjCk/VrM_h5lBLGI/AAAAAAAAH74/psw4Ycc3chk/s1280-Ic42/2016-02-04-897.jpg)">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h1>Big Ben London</h1>
+                                                <p>這是「行李箱系列」拼圖，顧名思義就是世界著名的景點，而我收藏的主因到不是因為我去過，而是，這是不規則拼圖，另一個原因是外包裝－－行李箱。。</p>
+                                                <a href="https://picasaweb.google.com/CharlotteRelaxed/BigBenLondon">拼圖相簿</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <a href="#top-carousel" class="left carousel-control" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                </a>
+                                <a href="#top-carousel" class="right carousel-control" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                </a>
                             </div>
-                            <a href="#top-carousel" class="left carousel-control" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </a>
-                            <a href="#top-carousel" class="right carousel-control" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            </a>
+                        </div>
+                        <div class="row">
+                            <h3>常去的拼圖店</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="store-box">
+                                    <div class="thumbnail">
+                                        <a href="https://www.facebook.com/puzzlechamber/">
+                                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/1000397_646931792003005_1192772577_n.jpg?oh=76d0701abba4a1e800a511470536d5a3&oe=5728AE96">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <p>這是拼圖迷大姊因為太喜愛拼圖了，等孩子大了，自己出來開店</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="store-box">
+                                    <div class="thumbnail">
+                                        <a href="http://newweb.renoirpuzzle.com.tw/">
+                                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/p160x160/417377_422863097754787_1195207107_n.jpg?oh=06630a3fc47aaeae5c2144fe839f76bd&oe=5723BB7B">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <p>雷諾瓦是開店二十幾年的連鎖拼圖店</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="store-box">
+                                    <div class="thumbnail">
+                                        <a href="http://www.glow.tw/Main.php?do=new">
+                                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hprofile-prn2/v/t1.0-1/p160x160/10636073_840106109342723_716460097988767633_n.jpg?oh=cdd8f4b5432035d4da967b02e5d362c8&oe=5734FB0D">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <p>台旺文創，是一個以台灣為出發點的創作團隊， 更明確地將本身的市場定位在「客製化」、「少量多樣」， 並堅持「精品路線」的原創精神，以精采創意與精緻商品擺脫低價競爭， 開拓一條與眾不同的創新大道
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

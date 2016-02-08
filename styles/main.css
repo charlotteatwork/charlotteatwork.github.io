@@ -1,42 +1,58 @@
 body {
-    background-image: url("2015-10-24-630_.jpg");
-    background-size: 100%;
+    background-image: url("DSC00931.jpg");
+    background-size: cover;
     background-attachment: fixed;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
     font-family: "Comic Sans MS", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
     font-size: 16px;
+    font-weight: bold;
 }
 
 #headerBar {
-    color: #003300;
-    background-color: #fff3e5;
+    color: #000066;
+    background-color: rgba(192, 192, 192, 0.3);
 }
 
-#puzzleHeader {
+#personal-puzzle {
     background-image: url(DSC01547.JPG);
-}
-
-.carousel-holder {
-    margin-bottom: 30px;
-}
-
-.jumbotron {
-    height: 400px;
+    height: 180px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.jumbotron .container {
-    position: relative;
-    top: 8px;
+#personal-puzzle h1 {
+    color: #336600;
+    font-size: 60px;
+    font-weight: bold;
 }
 
-.container h1,
-.container h3,
-a {
+#puxxleContent {
+    color: #336600;
+    background-color: rgba(255, 242, 229, 0.5);
+    padding: 20px;
+    font-size: 16px;
+}
+
+#puxxleContent h3 {
+    font-size: 40px;
     font-weight: bold;
+}
+
+#carousel-holder {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.col-md-12 .col-md-9 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .col-md-3 h1 {
@@ -50,6 +66,24 @@ a {
     font-weight: bold;
 }
 
-.col-md-3 p {
-    font-size: 16px;
+.div-float-right {
+    float: right;
+}
+
+.col-md-12 .col-md-10 {
+    margin: 25px;
+}
+
+.store-box {
+    color: #99ccff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.thumbnail {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 98%;
+    height: auto;
 }
