@@ -81,11 +81,6 @@ h1 {
     width: 100%;
 }
 
-.row:after {
-    content: "": clear: both;
-    display: block;
-}
-
 .navbar-brand {
     height: 50px;
     padding: 15px 15px;

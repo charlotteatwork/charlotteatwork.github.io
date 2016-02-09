@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/main.css">
+    <script type='text/javascript' src='js/guessNumber.js'></script>
+    <title>猜數字遊戲</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row floatRight">
+            <a href="#" onclick="showRulePan();">RULE</a>
+        </div>
+        <div class="row gameTitle">Guess Number</div>
+        <div class="row numberInputPan">
+            <input type="text" id="num1" size="1" maxlength="1">
+            <input type="text" id="num2" size="1" maxlength="1">
+            <input type="text" id="num3" size="1" maxlength="1">
+            <input type="text" id="num4" size="1" maxlength="1">
+        </div>
+        <div id="guessingList" class="row">
+            <div class="col-4">Input</div>
+            <div class="col-4 floatRight">Result</div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="rulePanel" class="col-12">
+            <div class="row"> Rules: </div>
+            <div class="row">
+                <div class="col-8 floatRight">
+                    <span>"A"</span> indicates both the number AND the postion are CORRECT.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <span>"B"</span> indicates the correct number BUT in the WRONG spot.
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" onclick="hideRulePan();">BACK</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
