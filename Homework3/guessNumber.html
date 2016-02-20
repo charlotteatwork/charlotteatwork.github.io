@@ -20,14 +20,25 @@
         </div>
         <div class="row gameTitle">Guess Number</div>
         <div class="row numberInputPan">
+            <input type="text" id="num0" size="1" maxlength="1">
             <input type="text" id="num1" size="1" maxlength="1">
             <input type="text" id="num2" size="1" maxlength="1">
             <input type="text" id="num3" size="1" maxlength="1">
-            <input type="text" id="num4" size="1" maxlength="1">
+        </div>
+        <div id="congratsPanel" class="row">
+            恭喜！答對了！
+            <div id="answerDiv"></div>
+            <div class="floatRight">
+                <a href="#" onclick="playAgain();">Play Again!</a>
+            </div>
         </div>
         <div id="guessingList" class="row">
             <div class="col-4">Input</div>
             <div class="col-4 floatRight">Result</div>
+        </div>
+        <div class="row">
+            <table id="guessTable" width="100%">
+            </table>
         </div>
     </div>
     <div class="container">
