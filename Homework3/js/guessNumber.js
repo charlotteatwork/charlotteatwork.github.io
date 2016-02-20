@@ -141,8 +141,9 @@ function cleanUserInput() {
 function playAgain() {
     cleanUserInput();
     var guessTable = document.getElementById("guessTable");
-    for (var i = 0; i < guessTable.rows.length; i++) {
-        guessTable.deleteRow(0);
+    //console.log(guessTable.rows.length);
+    for (var i = guessTable.rows.length; 0 < i; i--) {
+        guessTable.deleteRow(i - 1);
     }
 
     computerNumber();
