@@ -88,8 +88,8 @@ function guessNumber() {
 }
 
 function displayGuessingResult() {
-    console.log("Computer random number: " + computerNum.toString());
-    console.log("User input number: " + userInputNum.toString());
+    //console.log("Computer random number: " + computerNum.toString());
+    //console.log("User input number: " + userInputNum.toString());
     guessCount++;
     var countA = 0;
     var countB = 0;
@@ -98,7 +98,7 @@ function displayGuessingResult() {
             countA++;
         }
     } // for
-    console.log("both the number AND the postion are CORRECT: " + countA);
+    //console.log("both the number AND the postion are CORRECT: " + countA);
 
     for (var l = 0; l < 4; l++) {
         for (var m = 0; m < 4; m++) {
@@ -108,7 +108,7 @@ function displayGuessingResult() {
             }
         }
     } // for
-    console.log("the correct number BUT in the WRONG spot: " + countB);
+    //console.log("the correct number BUT in the WRONG spot: " + countB);
 
     // process page
     var guessTable = document.getElementById("guessTable");
