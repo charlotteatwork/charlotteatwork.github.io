@@ -124,7 +124,7 @@ a {
     color: brown;
 }
 
-#congratsPanel {
+.congratsPanel {
     display: none;
     text-align: center;
     font-size: 35px;
@@ -133,7 +133,7 @@ a {
     line-height: 45px;
 }
 
-#playAgain {
+.playAgain {
     padding: 5px;
     font-size: 25px;
     border: 1px solid orange;
@@ -185,4 +185,29 @@ a {
     color: orange;
     border-top: 1px dotted orange;
     border-bottom: 1px dotted orange;
+}
+
+#computerGuessingPanel {
+    display: none;
+}
+
+.computerGuessingOutput input {
+    border: 5px solid #1a0d00;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: brown;
+}
+
+.abStyle {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: brown;
+    font-weight: bold;
 }

@@ -15,26 +15,54 @@
 
 <body>
     <div class="container">
-        <div class="row floatRight">
-            <a href="#" onclick="showRulePan();">RULE</a>
+        <div class="row">
+            <div id="changeToComputerGuess" class="col-6">
+                <a href="#" onclick="computerGuessMode();">COMPUTER GUESS MODE</a>
+            </div>
+            <div id="changeToUserGuess" class="col-6">
+                <a href="#" onclick="userGuessMode();">USER GUESS MODE</a>
+            </div>
+            <div class="col-6 floatRight" style="text-align: right;">
+                <a href="#" onclick="showRulePan();">RULE</a>
+            </div>
         </div>
         <div class="row gameTitle">Guess Number</div>
-        <div class="row numberInputPan">
+        <div id="userInputNumberPanel" class="row numberInputPan">
             <input type="text" id="num0" size="1" maxlength="1">
             <input type="text" id="num1" size="1" maxlength="1">
             <input type="text" id="num2" size="1" maxlength="1">
             <input type="text" id="num3" size="1" maxlength="1">
         </div>
-        <div id="congratsPanel" class="row">
+        <div id="congratsUserPanel" class="row congratsPanel">
             恭喜！答對了！
             <div id="answerDiv"></div>
             <div class="floatRight">
-                <a id="playAgain" href="#" onclick="playAgain();">Play Again!</a>
+                <a class="playAgain" href="#" onclick="userGuesspPlayAgain();">Play Again!</a>
             </div>
         </div>
         <div id="guessingList" class="row">
-            <div class="col-4">Input</div>
-            <div class="col-4 floatRight">Result</div>
+            <div id="userTitle" class="col-4">User</div>
+            <div id="cpTitle" class="col-4 floatRight">Computer</div>
+        </div>
+        <div id="computerGuessingPanel" class="row">
+            <div class="col-5">
+                <span id="cpNum0" class="col-2 abStyle"></span>
+                <span id="cpNum1" class="col-2 abStyle"></span>
+                <span id="cpNum2" class="col-2 abStyle"></span>
+                <span id="cpNum3" class="col-2 abStyle"></span>
+            </div>
+            <div class="col-5 computerGuessingOutput floatRight">
+                <input type="text" id="inputCountA" size="1" onkeyup="inputCountFocus();">
+                <span class="abStyle">A</span>
+                <input type="text" id="inputCountB" size="1" onkeyup="computerGuessNumber();">
+                <span class="abStyle">B</span>
+            </div>
+        </div>
+        <div id="computerRightPanel" class="row congratsPanel">
+            電腦猜對了！
+            <div class="floatRight">
+                <a class="playAgain" href="#" onclick="computerGuessPlayAgain();">Play Again!</a>
+            </div>
         </div>
         <div class="row">
             <table id="guessTable" width="100%">
